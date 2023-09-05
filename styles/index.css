@@ -77,38 +77,3 @@ input[type="text"] + button {
 .thumbnail-option button:hover {
   background-color: #2680c5;
 }
-import { useState } from "react";
-import copy from "copy-to-clipboard";
-
-const Index = () => {
-  const [videoURL, setVideoURL] = useState("");
-  const [thumbnailOptions, setThumbnailOptions] = useState([]);
-  
-  // ... other functions ...
-
-  return (
-    <div className="container mx-auto px-4 py-8">
-      {/* ... other JSX ... */}
-      
-      {/* Circular buttons with icons for sharing */}
-      <div className="mt-8">
-        <div className="flex justify-center space-x-4">
-          <div className="rounded-full bg-blue-500 text-white text-center w-12 h-12 flex items-center justify-center cursor-pointer" onClick={shareOnFacebook}>
-            <i className="fab fa-facebook-f"></i> {/* Facebook icon */}
-          </div>
-          <div className="rounded-full bg-blue-500 text-white text-center w-12 h-12 flex items-center justify-center cursor-pointer" onClick={shareOnTelegram}>
-            <i className="fab fa-telegram-plane"></i> {/* Telegram icon */}
-          </div>
-          <div className="rounded-full bg-blue-500 text-white text-center w-12 h-12 flex items-center justify-center cursor-pointer" onClick={sendEmail}>
-            <i className="fas fa-envelope"></i> {/* Email icon */}
-          </div>
-          <div className="rounded-full bg-blue-500 text-white text-center w-12 h-12 flex items-center justify-center cursor-pointer" onClick={shareOnTwitter}>
-            <i className="fab fa-twitter"></i> {/* Twitter icon */}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Index;
