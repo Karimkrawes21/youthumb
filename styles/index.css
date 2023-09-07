@@ -14,30 +14,6 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
-/* Style the navbar */
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-/* Style the navbar links */
-nav ul li a {
-  text-decoration: none;
-  color: #3498db; /* Link color */
-  font-weight: bold;
-  transition: color 0.2s;
-}
-
-nav ul li a:hover {
-  color: #2680c5; /* Hover color */
-}
-
 
 /* Style the input and button for the YouTube URL */
 input[type="text"] {
@@ -100,4 +76,16 @@ input[type="text"] + button {
 
 .thumbnail-option button:hover {
   background-color: #2680c5;
+}
+
+/* Navigation styles */
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
