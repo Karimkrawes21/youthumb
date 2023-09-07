@@ -17,8 +17,8 @@ function MyApp({ Component, pageProps }) {
             site_name: "Pobieracz miniatur z YouTube",
           }}
         />
-        {/* Your paragraph */}
-        <p>Pobierz miniaturę YouTube</p>
+        {/* Your paragraph with inline style */}
+        <p style={{ fontWeight: 'bold' }}>Pobierz miniaturę YouTube</p>
 
         {/* Rest of your code */}
         <Component {...pageProps} />
