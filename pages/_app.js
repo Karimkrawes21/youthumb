@@ -5,21 +5,37 @@ import { DefaultSeo } from "next-seo";
 function MyApp({ Component, pageProps }) {
   return (
     <Fragment>
-      <DefaultSeo
-        title="Pobieracz miniatur z YouTube"
-        description="Pobierz wysokiej jakości miniaturki z filmów na YouTube."
-        canonical="https://twój-adres-strony.pl"
-        openGraph={{
-          url: "https://twój-adres-strony.pl",
-          title: "Pobieracz miniatur z YouTube",
-          description: "Pobierz wysokiej jakości miniaturki z filmów na YouTube.",
-          site_name: "Pobieracz miniatur z YouTube",
-        }}
-      />
-      <Component {...pageProps} />
+      {/* Left Navbar */}
+      <div className="navbar-left">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div className="content-right">
+        <DefaultSeo
+          title="Pobieracz miniatur z YouTube"
+          description="Pobierz wysokiej jakości miniaturki z filmów na YouTube."
+          canonical="https://twój-adres-strony.pl"
+          openGraph={{
+            url: "https://twój-adres-strony.pl",
+            title: "Pobieracz miniatur z YouTube",
+            description: "Pobierz wysokiej jakości miniaturki z filmów na YouTube.",
+            site_name: "Pobieracz miniatur z YouTube",
+          }}
+        />
+        {/* Your paragraph */}
+        <p>Download Youtube Thumbnail In This Code</p>
+
+        {/* Rest of your code */}
+        <Component {...pageProps} />
+      </div>
     </Fragment>
   );
 }
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7282814216422401"
-     crossorigin="anonymous"></script>
+
 export default MyApp;
+
