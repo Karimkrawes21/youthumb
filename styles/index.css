@@ -38,7 +38,13 @@ input[type="text"] + button {
   cursor: pointer;
   transition: background-color 0.2s;
 }
-
+.nav ul {float: right;
+  margin: right 20px;
+}
+.nav ul li {display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
 .btn-blue:hover {
   background-color: #2680c5;
 }
@@ -76,11 +82,4 @@ input[type="text"] + button {
 
 .thumbnail-option button:hover {
   background-color: #2680c5;
-}
-nav ul {float: right;
-  margin: right 20px;
-}
-nav ul li {display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
 }
