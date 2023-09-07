@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
           }}
         />
         {/* Your paragraph */}
-        <p>Download Youtube Thumbnail</p>
+        <p>Pobierz miniaturę YouTube</p>
 
         {/* Rest of your code */}
         <Component {...pageProps} />
